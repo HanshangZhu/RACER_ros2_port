@@ -1,0 +1,40 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/hz/ros2_ws/install/robot_interface/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/hz/Research/RACER/swarm_exploration/active_perception/include/**",
+        "/home/hz/Research/RACER/swarm_exploration/bspline/include/**",
+        "/home/hz/Research/RACER/swarm_exploration/bspline_opt/include/**",
+        "/home/hz/Research/RACER/swarm_exploration/exploration_manager/include/**",
+        "/home/hz/Research/RACER/swarm_exploration/path_searching/include/**",
+        "/home/hz/Research/RACER/swarm_exploration/plan_env/include/**",
+        "/home/hz/Research/RACER/swarm_exploration/plan_manage/include/**",
+        "/home/hz/Research/RACER/swarm_exploration/poly_traj/include/**",
+        "/home/hz/Research/RACER/swarm_exploration/traj_utils/include/**",
+        "/home/hz/Research/RACER/swarm_exploration/utils/lkh_mtsp_solver/include/**",
+        "/home/hz/Research/RACER/swarm_exploration/utils/lkh_tsp_solver/include/**",
+        "/home/hz/Research/RACER/uav_simulator/Utils/multi_map_server/include/**",
+        "/home/hz/Research/RACER/uav_simulator/Utils/pose_utils/include/**",
+        "/home/hz/Research/RACER/uav_simulator/Utils/quadrotor_msgs/include/**",
+        "/home/hz/Research/RACER/uav_simulator/Utils/uav_utils/include/**",
+        "/home/hz/Research/RACER/uav_simulator/local_sensing/include/**",
+        "/home/hz/Research/RACER/uav_simulator/so3_control/include/**",
+        "/home/hz/Research/RACER/uav_simulator/so3_disturbance_generator/include/**",
+        "/home/hz/Research/RACER/uav_simulator/so3_quadrotor_simulator/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ros2",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}

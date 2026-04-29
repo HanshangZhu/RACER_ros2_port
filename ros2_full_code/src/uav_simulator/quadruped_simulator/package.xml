@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>quadruped_simulator</name>
+  <version>0.0.1</version>
+  <description>
+    Lightweight quadruped (legged ground robot) simulator and hardware bridge
+    for RACER. Two executables:
+      * cmd2base     - integrates PositionCommand into SE(2) odometry with a
+                       body-frame non-holonomic motion model (forward/lateral
+                       velocity + yaw-rate clipping). Replaces poscmd_2_odom
+                       when robot_type:=quadruped.
+      * cmd_to_twist - converts PositionCommand to geometry_msgs/Twist on
+                       /cmd_vel for real quadrupeds (Unitree Go1/Go2 etc.)
+                       that consume body-velocity commands.
+  </description>
+  <maintainer email="todo@todo.todo">RACER maintainers</maintainer>
+  <license>GPL-3.0-only</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>quadrotor_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>eigen3_cmake_module</depend>
+  <depend>eigen</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

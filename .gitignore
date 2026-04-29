@@ -1,3 +1,17 @@
 swarm_exploration/utils/lkh_mtsp_solver/resource/*.atsp
 swarm_exploration/utils/lkh_mtsp_solver/resource/*.par
 swarm_exploration/utils/lkh_mtsp_solver/resource/*.tour
+
+# VSCode IntelliSense cache (huge, machine-local)
+.vscode/browse.vc.db*
+
+# catkin build artifacts (root-owned, regenerated in container)
+docker/.cache/
+
+# colcon build artifacts
+ros2_full_code/build/
+ros2_full_code/install/
+ros2_full_code/log/
+ros2_full_code/src/build/
+ros2_full_code/src/install/
+ros2_full_code/src/log/

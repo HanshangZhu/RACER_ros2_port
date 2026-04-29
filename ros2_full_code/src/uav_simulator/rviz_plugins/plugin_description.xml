@@ -1,0 +1,10 @@
+<library path="rviz_plugins">
+  <class name="rviz_plugins/Goal3DTool"
+         type="rviz_plugins::Goal3DTool"
+         base_class_type="rviz_common::Tool">
+    <description>
+      Drag-click 3D goal pose (x, y, yaw via left-drag; z via right-drag).
+      Publishes geometry_msgs/PoseStamped on the "goal" topic by default.
+    </description>
+  </class>
+</library>

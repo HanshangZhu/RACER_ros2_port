@@ -1,0 +1,41 @@
+{
+    "ROS2.distro": "humble",
+    "python.autoComplete.extraPaths": [
+        "/home/hz/ros2_ws/build/yahboom_llm",
+        "/home/hz/ros2_ws/install/yahboom_llm/lib/python3.10/site-packages",
+        "/home/hz/ros2_ws/build/x3_uav_llm",
+        "/home/hz/ros2_ws/install/x3_uav_llm/lib/python3.10/site-packages",
+        "/home/hz/ros2_ws/build/robot_llm",
+        "/home/hz/ros2_ws/install/robot_llm/lib/python3.10/site-packages",
+        "/home/hz/ros2_ws/build/drone",
+        "/home/hz/ros2_ws/install/drone/lib/python3.10/site-packages",
+        "/home/hz/ros2_ws/build/delivery_bot",
+        "/home/hz/ros2_ws/install/delivery_bot/lib/python3.10/site-packages",
+        "/home/hz/ros2_ws/build/cleaning_bot",
+        "/home/hz/ros2_ws/install/cleaning_bot/lib/python3.10/site-packages",
+        "/home/hz/ros2_ws/install/robot_interface/local/lib/python3.10/dist-packages",
+        "/home/hz/ros2_ws/build/chatty",
+        "/home/hz/ros2_ws/install/chatty/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/hz/ros2_ws/build/yahboom_llm",
+        "/home/hz/ros2_ws/install/yahboom_llm/lib/python3.10/site-packages",
+        "/home/hz/ros2_ws/build/x3_uav_llm",
+        "/home/hz/ros2_ws/install/x3_uav_llm/lib/python3.10/site-packages",
+        "/home/hz/ros2_ws/build/robot_llm",
+        "/home/hz/ros2_ws/install/robot_llm/lib/python3.10/site-packages",
+        "/home/hz/ros2_ws/build/drone",
+        "/home/hz/ros2_ws/install/drone/lib/python3.10/site-packages",
+        "/home/hz/ros2_ws/build/delivery_bot",
+        "/home/hz/ros2_ws/install/delivery_bot/lib/python3.10/site-packages",
+        "/home/hz/ros2_ws/build/cleaning_bot",
+        "/home/hz/ros2_ws/install/cleaning_bot/lib/python3.10/site-packages",
+        "/home/hz/ros2_ws/install/robot_interface/local/lib/python3.10/dist-packages",
+        "/home/hz/ros2_ws/build/chatty",
+        "/home/hz/ros2_ws/install/chatty/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

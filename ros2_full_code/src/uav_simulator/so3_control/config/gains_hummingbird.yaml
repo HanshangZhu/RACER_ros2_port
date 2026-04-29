@@ -1,0 +1,14 @@
+/**:
+  ros__parameters:
+    gains.pos.x: 2.0
+    gains.pos.y: 2.0
+    gains.pos.z: 3.5
+    gains.vel.x: 1.8
+    gains.vel.y: 1.8
+    gains.vel.z: 2.0
+    gains.rot.x: 1.0
+    gains.rot.y: 1.0
+    gains.rot.z: 0.3
+    gains.ang.x: 0.07
+    gains.ang.y: 0.07
+    gains.ang.z: 0.02

@@ -1,0 +1,38 @@
+cmake_minimum_required(VERSION 3.14)
+project(map_generator)
+
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 17)
+endif()
+
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(pcl_conversions REQUIRED)
+find_package(PCL REQUIRED)
+find_package(Eigen3 REQUIRED)
+
+include_directories(${PCL_INCLUDE_DIRS} ${EIGEN3_INCLUDE_DIRS})
+add_definitions(${PCL_DEFINITIONS})
+link_directories(${PCL_LIBRARY_DIRS})
+
+foreach(exe map_pub map_recorder click_map pilar_map)
+  if(exe STREQUAL "map_pub")
+    set(src src/map_publisher.cpp)
+  elseif(exe STREQUAL "pilar_map")
+    set(src src/random_pilar_map.cpp)
+  else()
+    set(src src/${exe}.cpp)
+  endif()
+  add_executable(${exe} ${src})
+  ament_target_dependencies(${exe} rclcpp sensor_msgs geometry_msgs nav_msgs pcl_conversions)
+  target_link_libraries(${exe} ${PCL_LIBRARIES})
+  install(TARGETS ${exe} DESTINATION lib/${PROJECT_NAME})
+endforeach()
+
+install(DIRECTORY resource DESTINATION share/${PROJECT_NAME})
+install(DIRECTORY launch DESTINATION share/${PROJECT_NAME} OPTIONAL)
+
+ament_package()
